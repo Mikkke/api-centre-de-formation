@@ -1,0 +1,43 @@
+{
+  "name": "api-centre-de-formation",
+  "version": "1.0.0",
+  "description": "Exemple: API d'un centre de formation",
+  "homepage": "https://github.com/sandrocode/api-centre-de-formation#readme",
+  "license": "MIT",
+  "author": "Sandro Micalizzi <54776082+sandrocode@users.noreply.github.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sandrocode/api-centre-de-formation.git"
+  },
+  "engines": {
+    "node": ">=12.16.0"
+  },
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon",
+    "test": "npm run test:unit",
+    "test:unit": "nyc mocha ./src/**/*.spec.js",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix ."
+  },
+  "husky": {
+    "hooks": {
+      "pre-push": "npm run lint && npm run test"
+    }
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-node": "^11.0.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "eslint-plugin-promise": "^4.2.1",
+    "husky": "^4.2.3",
+    "mocha": "^7.0.1",
+    "nodemon": "^2.0.2",
+    "nyc": "^15.0.0",
+    "prettier": "^1.19.1"
+  }
+}
