@@ -8,5 +8,5 @@ const env = process.env.NODE_ENV || "development";
 /* eslint-disable no-console */
 server.listen(port, () => {
   console.debug(`Server is listening on port ${port}`);
-  console.debut(`Current environment is ${env}`);
+  console.debug(`Current environment is ${env}`);
 });
